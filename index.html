@@ -22,24 +22,24 @@
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                              <div class="button" id = "7">7</div>
-                              <div class="button"id = "8">8</div>
-                              <div class="button"id = "9">9</div>
+                              <div class="button" onclick="display.value += '7'">7</div>
+                              <div class="button"onclick="display.value += '8'">8</div>
+                              <div class="button"onclick="display.value += '9'">9</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button"id = "4">4</div>
-                              <div class="button"id = "5">5</div>
-                              <div class="button"id = "6">6</div>
+                              <div class="button"onclick="display.value += '4'">4</div>
+                              <div class="button"onclick="display.value += '5'">5</div>
+                              <div class="button"onclick="display.value += '6'">6</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button"id = "1">1</div>
-                              <div class="button"id = "2">2</div>
-                              <div class="button"id = "3">3</div>
+                              <div class="button"onclick="display.value += '1'">1</div>
+                              <div class="button"onclick="display.value += '2'">2</div>
+                              <div class="button"onclick="display.value += '3'">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button"id = "*">&lt;</div>
-                                <div class="button"id = "0">0</div>
-                                <div class="button"id = "C">C</div>
+                                <div class="button"onclick="display.value = display.value.slice(0,-1).toString()">&lt;</div>
+                                <div class="button"onclick="display.value += '0'">0</div>
+                                <div class="button"onclick="display.value = '' ">C</div>
                             </div>
                             <div>
                                 <button type="submit" class="submit-btn" id="submit">Submit</button>
